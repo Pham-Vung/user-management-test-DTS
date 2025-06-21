@@ -1,5 +1,7 @@
 package org.example.user_management.exception;
 
+import org.example.user_management.DTO.response.ApiError;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -21,9 +23,12 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler(value = {IllegalArgumentException.class})
-    public ResponseEntity<?> handleIllegalException(IllegalArgumentException ex) {
-        Map<String, String> errors = new HashMap<>();
-        errors.put("message", ex.getMessage());
-        return ResponseEntity.badRequest().body(errors);
+    public ResponseEntity<ApiError> handleIllegalException(IllegalArgumentException ex) {
+        return ResponseEntity.badRequest().body(new ApiError(400, HttpStatus.valueOf(400).getReasonPhrase(), ex.getMessage()));
+    }
+
+    @ExceptionHandler(value = {RuntimeException.class})
+    public ResponseEntity<ApiError> handleAllOtherExceptions(Exception ex) {
+        return ResponseEntity.status(500).body(new ApiError(500, "Unexpected error: ", ex.getMessage()));
     }
 }

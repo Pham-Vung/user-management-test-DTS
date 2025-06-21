@@ -27,8 +27,13 @@ src/main/java/org/example/user_management/
 spring.datasource.url=jdbc:mysql://localhost:3306/user_db
 spring.datasource.username=root
 spring.datasource.password=your_password
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+spring.security.user.name=admin
+spring.security.user.password=admin
+spring.security.user.roles=USER
 jwt.secret=my_super_secret_256bit_key_that_should_be_secure
 
 ▶️ Cài đặt và chạy

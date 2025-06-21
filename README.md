@@ -3,7 +3,7 @@
 ## 🛠 Công nghệ sử dụng
 - Java 17
 - Spring Boot 3.x
-- Spring Security (JWT Authentication)
+- Spring Security
 - Hibernate JPA
 - MySQL
 - Maven

@@ -17,7 +17,7 @@
 ├── config/                 # SecurityConfig  <br>
 ├── service/  <br>
 │   ├── interfaces/         # IUserService  <br>
-│   └── implêmnt/           # UserService  <br>
+│   └── implement/           # UserService  <br>
 ├── exception/              # GlobalExceptionHandler (validation, login...)  <br>
 └── UserManagementApplication.java  # Main entry point
 ## ⚙️ Cấu hình

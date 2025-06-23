@@ -10,17 +10,16 @@
 
 ## 📁 Cấu trúc dự án
 src/main/java/org/example/user_management/
-├── controller/ # AuthController
-├── DTO/ # DTOs: Login, Register, Response
-├── entity/ # Entity: User
-├── repository/ # UserRepository
-├── config/ # SecuriryConfig
+├── controller/              # AuthController
+├── DTO/                    # DTOs: Login, Register, Response
+├── entity/                 # Entity: User
+├── repository/             # UserRepository
+├── config/                 # SecurityConfig
 ├── service/
-│ ├── interfaces/ # IUserService
-│ └── impl/ # UserService
-├── exception/ # GlobalExceptionHandler (validation, login...)
-└── UserManagementApplication.java # Main entry point
-
+│   ├── interfaces/         # IUserService
+│   └── implêmnt/               # UserService
+├── exception/              # GlobalExceptionHandler (validation, login...)
+└── UserManagementApplication.java  # Main entry point
 ## ⚙️ Cấu hình
 ### 📄 `application.properties`
 ```properties

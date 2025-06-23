@@ -9,7 +9,7 @@
 - Maven
 
 ## 📁 Cấu trúc dự án
-src/main/java/org/example/user_management/
+`src/main/java/org/example/user_management/`
 ├── controller/              # AuthController
 ├── DTO/                    # DTOs: Login, Register, Response
 ├── entity/                 # Entity: User

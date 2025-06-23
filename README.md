@@ -9,16 +9,16 @@
 - Maven
 
 ## 📁 Cấu trúc dự án
- src/main/java/org/example/user_management/```
-├── controller/              # AuthController
-├── DTO/                    # DTOs: Login, Register, Response
-├── entity/                 # Entity: User
-├── repository/             # UserRepository
-├── config/                 # SecurityConfig
-├── service/
-│   ├── interfaces/         # IUserService
-│   └── implêmnt/               # UserService
-├── exception/              # GlobalExceptionHandler (validation, login...)
+ src/main/java/org/example/user_management/ <br>
+├── controller/              # AuthController  <br>
+├── DTO/                    # DTOs: Login, Register, Response  <br>
+├── entity/                 # Entity: User  <br>
+├── repository/             # UserRepository  <br>
+├── config/                 # SecurityConfig  <br>
+├── service/  <br>
+│   ├── interfaces/         # IUserService  <br>
+│   └── implêmnt/           # UserService  <br>
+├── exception/              # GlobalExceptionHandler (validation, login...)  <br>
 └── UserManagementApplication.java  # Main entry point
 ## ⚙️ Cấu hình
 ### 📄 `application.properties`
